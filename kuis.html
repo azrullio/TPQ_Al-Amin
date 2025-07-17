@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuis Islam - Mengenal Islam Lebih Dekat</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Tambahan CSS khusus kuis */
+    .quiz-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .question {
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+    .options {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .options li {
+      margin-bottom: 12px;
+    }
+    .options input[type="radio"] {
+      margin-right: 10px;
+      accent-color: #3b82f6;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    .result {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      color: #059669;
+    }
+    .leaderboard {
+      margin-top: 30px;
+    }
+    .leaderboard h3 {
+      margin-bottom: 10px;
+    }
+    .leaderboard ol {
+      padding-left: 20px;
+    }
+    .delete-button {
+      background-color: #ef4444;
+      margin-top: 10px;
+    }
+    .delete-button:hover {
+      background-color: #dc2626;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🕌 Mengenal Islam Lebih Dekat</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="rukun-iman.html">Rukun Iman</a></li>
+        <li><a href="rukun-islam.html">Rukun Islam</a></li>
+        <li><a href="sholat.html">Tata Cara Sholat</a></li>
+        <li><a href="wudhu.html">Tata Cara Wudhu</a></li>
+        <li><a href="kisah-nabi.html">Kisah Nabi</a></li>
+        <li><a href="malaikat.html">Malaikat</a></li>
+        <li><a href="asmaul-husna.html">Asmaul Husna</a></li>
+        <li><a href="kuis.html" class="active">Kuis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container content-section quiz-container">
+    <h2>📝 Kuis Sederhana</h2>
+    <form id="quizForm">
+          <p>1. Berapa jumlah Rukun Islam?</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q1" value="3" required> 3</label></li>
+          <li><label><input type="radio" name="q1" value="5"> 5</label></li>
+          <li><label><input type="radio" name="q1" value="7"> 7</label></li>
+          <li><label><input type="radio" name="q1" value="10"> 10</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question2">
+        <p>2. Apa arti doa "Bismillah"?</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q2" value="Dengan nama Allah" required> Dengan nama Allah</label></li>
+          <li><label><input type="radio" name="q2" value="Segala puji bagi Allah"> Segala puji bagi Allah</label></li>
+          <li><label><input type="radio" name="q2" value="Aku mohon ampun"> Aku mohon ampun</label></li>
+          <li><label><input type="radio" name="q2" value="Tuhan itu Maha Esa"> Tuhan itu Maha Esa</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question3">
+        <p>3. Berapa jumlah Rukun Iman?</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q3" value="6" required> 6</label></li>
+          <li><label><input type="radio" name="q3" value="5"> 5</label></li>
+          <li><label><input type="radio" name="q3" value="7"> 7</label></li>
+          <li><label><input type="radio" name="q3" value="10"> 10</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question4">
+        <p>4. Dalam tata cara sholat, apa yang dilakukan setelah takbiratul ihram?</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q4" value="Ruku'" required> Ruku'</label></li>
+          <li><label><input type="radio" name="q4" value="Membaca Al-Fatihah"> Membaca Al-Fatihah</label></li>
+          <li><label><input type="radio" name="q4" value="Sujud"> Sujud</label></li>
+          <li><label><input type="radio" name="q4" value="Duduk Tasyahhud"> Duduk Tasyahhud</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question5">
+        <p>5. Siapa malaikat yang bertugas menyampaikan wahyu?</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q5" value="Mikail" required> Mikail</label></li>
+          <li><label><input type="radio" name="q5" value="Jibril"> Jibril</label></li>
+          <li><label><input type="radio" name="q5" value="Izrail"> Izrail</label></li>
+          <li><label><input type="radio" name="q5" value="Munkar"> Munkar</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question6">
+        <p>6. Berapa jumlah nabi yang wajib kita imani?</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q6" value="10" required> 10</label></li>
+          <li><label><input type="radio" name="q6" value="25"> 25</label></li>
+          <li><label><input type="radio" name="q6" value="5"> 5</label></li>
+          <li><label><input type="radio" name="q6" value="20"> 20</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question7">
+        <p>7. Siapa malaikat yang bertugas mencabut nyawa</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q7" value="Jibril" required> Jibril</label></li>
+          <li><label><input type="radio" name="q7" value="Atid"> Atid</label></li>
+          <li><label><input type="radio" name="q7" value="Malik"> Malik</label></li>
+          <li><label><input type="radio" name="q7" value="Izrail"> Izrail</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question8">
+        <p>8. Barapa jumlah asmaul husna</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q8" value="89" required> 89</label></li>
+          <li><label><input type="radio" name="q8" value="99"> 99</label></li>
+          <li><label><input type="radio" name="q8" value="100"> 100</label></li>
+          <li><label><input type="radio" name="q8" value="95"> 95</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question9">
+        <p>9. Apa rukun islam yang ke 5?</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q9" value="Puasa" required> Puasa</label></li>
+          <li><label><input type="radio" name="q9" value="Haji"> Haji</label></li>
+          <li><label><input type="radio" name="q9" value="Syahadat"> Syahadat</label></li>
+          <li><label><input type="radio" name="q9" value="Sholat"> Sholat</label></li>
+        </ul>
+      </div>
+
+      <div class="question" id="question10">
+        <p>10. Apa rukun iman yang ke 3?</p>
+        <ul class="options">
+          <li><label><input type="radio" name="q10" value="Iman kepada Allah" required> Iman kepada Allah</label></li>
+          <li><label><input type="radio" name="q10" value="Iman kepada Nabi dan Rasul Allah"> Iman kepada Nabi dan Rasul Allah</label></li>
+          <li><label><input type="radio" name="q10" value="Iman kepada kitab-kitab Allah"> Iman kepada kitab-kitab Allah</label></li>
+          <li><label><input type="radio" name="q10" value="Iman kepada qada dan qadar Allah"> Iman kepada qada dan qadar Allah</label></li>
+        </ul>
+      </div>
+      
+      <div class="question">
+        <p>Masukkan Nama Anda untuk papan peringkat:</p>
+        <input type="text" id="username" name="username" required placeholder="Nama Anda" />
+      </div>
+
+      <button type="submit">Kirim Jawaban</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+    <div class="leaderboard">
+      <h3>🏆 Papan Peringkat</h3>
+      <ol id="leaderboardList"></ol>
+      <button id="deleteLeaderboard" class="delete-button">Hapus Papan Peringkat</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mengenal Islam Lebih Dekat</p>
+  </footer>
+
+  <script>
+    const quizForm = document.getElementById('quizForm');
+    const resultDiv = document.getElementById('result');
+    const leaderboardList = document.getElementById('leaderboardList');
+    const deleteLeaderboardBtn = document.getElementById('deleteLeaderboard');
+
+    const answers = {
+      q1: '5',
+      q2: 'Dengan nama Allah',
+      q3: '6',
+      q4: 'Membaca Al-Fatihah',
+      q5: 'Jibril',
+      q6: '25',
+      q7: 'Izrail',
+      q8: '99',
+      q9: 'Haji',
+      q10: 'Iman kepada kitab-kitab Allah'
+    };
+
+    // Load leaderboard dari localStorage
+    function loadLeaderboard() {
+      const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+      leaderboardList.innerHTML = '';
+      leaderboard
+        .sort((a, b) => b.score - a.score)
+        .forEach(entry => {
+          const li = document.createElement('li');
+          li.textContent = `${entry.name} - Skor: ${entry.score}`;
+          leaderboardList.appendChild(li);
+        });
+    }
+
+    quizForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      let score = 0;
+      const formData = new FormData(quizForm);
+      const username = formData.get('username');
+
+      for (const [key, value] of formData.entries()) {
+        if (answers[key] === value) {
+          score++;
+        }
+      }
+
+      resultDiv.textContent = `Skor Anda: ${score} dari 10. ${score === 10 ? 'Hebat, kamu paham banget!' : 'Terus belajar ya!'}`;
+
+      // Simpan ke leaderboard
+      const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+      leaderboard.push({ name: username, score: score });
+      localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+
+      loadLeaderboard();
+    });
+
+    // Hapus leaderboard
+    deleteLeaderboardBtn.addEventListener('click', function() {
+      if (confirm('Apakah Anda yakin ingin menghapus papan peringkat?')) {
+        localStorage.removeItem('leaderboard');
+        loadLeaderboard();
+      }
+    });
+
+    // Tampilkan leaderboard saat halaman dimuat
+    window.addEventListener('load', loadLeaderboard);
+  </script>
+</body>
+</html>
